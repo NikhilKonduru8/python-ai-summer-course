@@ -16,11 +16,11 @@ const Hero = () => {
           </h1>
           
           <p className="text-2xl md:text-3xl mb-6 font-light">
-            Professional Python Course
+            Python Course for Students
           </p>
           
           <p className="text-xl md:text-2xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
-            Build real-world AI applications in our intensive 4-week program
+            Learn AI and data science fundamentals in our comprehensive 4-week program
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

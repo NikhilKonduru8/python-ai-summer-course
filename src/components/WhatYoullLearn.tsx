@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const WhatYoullLearn = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
   const skills = [
     {
       title: "Python Logic & Data Types",
@@ -47,14 +49,17 @@ const WhatYoullLearn = () => {
 
   return (
     <section className="py-20 px-4 bg-background font-inter">
-      <div className="container mx-auto max-w-6xl">
+      <div 
+        ref={elementRef}
+        className={`container mx-auto max-w-6xl animate-on-scroll ${isVisible ? 'animate-in' : ''}`}
+      >
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             What You'll Learn
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            From Python basics to advanced machine learning, you'll gain practical skills 
-            that are in high demand in today's tech industry
+            From Python basics to machine learning fundamentals, you'll gain practical skills 
+            that will help you excel in computer science and data-related college courses
           </p>
         </div>
         
@@ -62,7 +67,7 @@ const WhatYoullLearn = () => {
           {skills.map((skill, index) => (
             <Card 
               key={index}
-              className="border-border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-card group"
+              className={`border-border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-card group animate-on-scroll-scale stagger-delay-${(index % 6) + 1} ${isVisible ? 'animate-in' : ''}`}
             >
               <CardContent className="pt-6 text-center">
                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">

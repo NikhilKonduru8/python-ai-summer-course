@@ -7,20 +7,20 @@ const CTAFooter = () => {
       <div className="container mx-auto max-w-5xl text-center">
         <div className="fade-in">
           <h2 className="text-4xl md:text-6xl font-bold mb-8">
-            Begin Your AI Career
+            Start Your AI Journey
           </h2>
           <p className="text-xl md:text-2xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
-            Join industry professionals in mastering the technologies shaping tomorrow
+            Learn the fundamentals of AI and machine learning to excel in your future studies
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12 text-left">
             <div className="bg-background/10 backdrop-blur-sm rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-2">Professional Curriculum</h3>
-              <p className="opacity-80">Industry-standard tools and methodologies</p>
+              <h3 className="text-lg font-semibold mb-2">Comprehensive Curriculum</h3>
+              <p className="opacity-80">Well-structured lessons covering all the fundamentals</p>
             </div>
             <div className="bg-background/10 backdrop-blur-sm rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-2">Expert Mentorship</h3>
-              <p className="opacity-80">Direct access to experienced developers</p>
+              <h3 className="text-lg font-semibold mb-2">Student Mentorship</h3>
+              <p className="opacity-80">Direct access to instructors who understand learning</p>
             </div>
             <div className="bg-background/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-2">Portfolio Projects</h3>

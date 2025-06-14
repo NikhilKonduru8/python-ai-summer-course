@@ -1,16 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Overview = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
   return (
     <section className="py-24 px-4 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
+      <div 
+        ref={elementRef}
+        className={`container mx-auto max-w-6xl animate-on-scroll ${isVisible ? 'animate-in' : ''}`}
+      >
         <div className="text-center mb-16 fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Professional AI Education
+            AI & Machine Learning for Students
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Industry-standard curriculum designed for serious learners
+            Comprehensive curriculum designed to build strong foundations in AI and data science
           </p>
         </div>
         
@@ -31,7 +36,7 @@ const Overview = () => {
                 <span className="text-2xl">🚀</span>
               </div>
               <h3 className="text-xl font-semibold mb-4">Real Projects</h3>
-              <p className="text-muted-foreground">Build ML applications with industry-standard tools</p>
+              <p className="text-muted-foreground">Build ML applications with modern tools and libraries</p>
             </CardContent>
           </Card>
           

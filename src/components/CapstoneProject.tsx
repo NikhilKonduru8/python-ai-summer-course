@@ -26,7 +26,7 @@ const CapstoneProject = () => {
     {
       step: "4",
       title: "Build Your Portfolio",
-      description: "Projects can be shared on your resume or online portfolio to impress colleges and employers!",
+      description: "Projects can be shared on your resume or online portfolio to showcase your skills!",
       icon: "🏆",
       color: "from-orange-500 to-red-500"
     }

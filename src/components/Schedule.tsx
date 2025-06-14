@@ -36,7 +36,7 @@ const Schedule = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-secondary-foreground">
             Class Schedule
           </h2>
-          <p className="text-lg text-muted-foreground">
+           <p className="text-lg text-secondary-foreground">
             8 classes across 4 weeks, with each class lasting about 1 hour
           </p>
         </div>

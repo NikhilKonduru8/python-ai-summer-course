@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Tools = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
   const tools = [
     {
       name: "Python",
@@ -42,14 +44,16 @@ const Tools = () => {
 
   return (
     <section className="py-20 px-4 bg-secondary font-inter">
-      <div className="container mx-auto max-w-6xl">
+      <div 
+        ref={elementRef}
+        className={`container mx-auto max-w-6xl animate-on-scroll ${isVisible ? 'animate-in' : ''}`}
+      >
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-secondary-foreground">
             Tools You'll Be Using
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Learn to code in real environments used by professionals at Google, Netflix, 
-            and thousands of other companies worldwide
+          <p className="text-lg text-secondary-foreground max-w-3xl mx-auto">
+            Learn to code using the same tools and libraries that power modern AI and data science projects
           </p>
         </div>
         
@@ -57,7 +61,7 @@ const Tools = () => {
           {tools.map((tool, index) => (
             <Card 
               key={index}
-              className="border-border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-card group overflow-hidden"
+              className={`border-border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-card group overflow-hidden animate-on-scroll-scale stagger-delay-${(index % 6) + 1} ${isVisible ? 'animate-in' : ''}`}
             >
               <div className={`h-1 bg-gradient-to-r ${tool.color}`}></div>
               <CardHeader className="text-center pb-4">
@@ -80,11 +84,11 @@ const Tools = () => {
         <Card className="mt-12 border-border shadow-lg bg-card">
           <CardContent className="pt-8 pb-8 text-center">
             <h3 className="text-2xl font-bold mb-4 text-card-foreground">
-              Professional-Grade Tools
+              Industry-Standard Tools
             </h3>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              These are the same tools used by data scientists at major tech companies. 
-              By learning them now, you'll have a huge advantage in college and your future career!
+              These tools are widely used in AI and data science. 
+              Learning them now will give you a solid foundation for college computer science courses!
             </p>
           </CardContent>
         </Card>
