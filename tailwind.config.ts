@@ -63,9 +63,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%)',
-				'gradient-secondary': 'linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%)',
+				'gradient-primary': 'linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)',
+				'gradient-secondary': 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
