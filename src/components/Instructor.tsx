@@ -4,69 +4,79 @@ const Instructor = () => {
   const instructors = [
     {
       name: "Nikhil Konduru",
-      experience: "4+ years of Python programming experience, with a strong interest in AI, machine learning, and teaching.",
-      background: "I've taught beginner coding to kids and teens, built AI projects, and love making tech easy to understand.",
-      goal: "I want to make data science and ML approachable and fun for younger learners.",
-      avatar: "👨‍💻"
+      experience: "4+ years of Python programming experience, with a strong focus on AI, machine learning, and education.",
+      background: "Experienced in teaching coding fundamentals and building AI projects with real-world applications.",
+      goal: "Making data science and ML accessible through practical, hands-on learning.",
+      avatar: "👨‍💻",
+      email: "nikhilkonduru8@gmail.com"
     },
     {
-      name: "Arnav",
-      experience: "4+ years of coding experience, also passionate about coding and ML/AI.",
-      background: "Dedicated to helping students understand complex concepts through hands-on learning.",
-      goal: "Making technology accessible and exciting for the next generation of learners.",
-      avatar: "👨‍🎓"
+      name: "Arnav Garg",
+      experience: "4+ years of coding experience with expertise in machine learning and artificial intelligence.",
+      background: "Passionate about translating complex technical concepts into understandable learning experiences.",
+      goal: "Empowering the next generation with cutting-edge technology skills.",
+      avatar: "👨‍🎓",
+      email: "gargarnav10@gmail.com"
     }
   ];
 
   return (
-    <section className="py-20 px-4 bg-background font-inter">
+    <section className="py-24 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-            Meet Your Instructors
+        <div className="text-center mb-16 fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            Expert Instructors
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Learn from experienced developers who are passionate about teaching and AI
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Learn from industry professionals with proven teaching experience
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 gap-12 mb-12">
           {instructors.map((instructor, index) => (
             <Card 
               key={index}
-              className="border-border shadow-lg hover:shadow-xl transition-all duration-300 bg-card"
+              className="border-border shadow-lg hover:shadow-xl transition-all duration-300 bg-card slide-up"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <CardHeader className="text-center">
-                <div className="text-6xl mb-4">{instructor.avatar}</div>
-                <CardTitle className="text-2xl text-card-foreground">
-                  {instructor.name}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-card-foreground space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">Experience:</h4>
-                  <p className="text-muted-foreground">{instructor.experience}</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Background:</h4>
-                  <p className="text-muted-foreground">{instructor.background}</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Goal:</h4>
-                  <p className="text-muted-foreground">{instructor.goal}</p>
+              <CardContent className="p-8">
+                <div className="flex items-start gap-6">
+                  <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center text-3xl">
+                    {instructor.avatar}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2 text-card-foreground">
+                      {instructor.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      <a href={`mailto:${instructor.email}`} className="hover:text-primary transition-colors">
+                        {instructor.email}
+                      </a>
+                    </p>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold mb-2 text-primary">Experience</h4>
+                        <p className="text-muted-foreground text-sm">{instructor.experience}</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-2 text-primary">Approach</h4>
+                        <p className="text-muted-foreground text-sm">{instructor.background}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
         
-        <Card className="border-border shadow-lg bg-card">
-          <CardContent className="pt-6 text-center text-card-foreground">
-            <h3 className="text-lg font-semibold mb-2">About Us</h3>
-            <p className="text-muted-foreground">
-              Together, we helped run a coding club at our school, where we won many hackathons 
-              and participated in NASA Ames hackathons. We're excited to share our passion for 
-              technology and help you build amazing projects!
+        <Card className="border-border shadow-lg bg-primary/5 slide-up stagger-delay-4">
+          <CardContent className="p-8 text-center">
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Our Background</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              We co-founded and led our school's coding club, achieving multiple hackathon victories 
+              including recognition at NASA Ames competitions. Our combined expertise in software 
+              development and education creates an optimal learning environment for ambitious students.
             </p>
           </CardContent>
         </Card>

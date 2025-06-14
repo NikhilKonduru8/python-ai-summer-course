@@ -67,8 +67,8 @@ export default {
 				'inter': ['Inter', 'sans-serif'],
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(135deg, #1E2A38 0%, #3B82F6 100%)',
-				'gradient-secondary': 'linear-gradient(135deg, #F9FAFB 0%, #ffffff 100%)',
+				'gradient-primary': 'linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%)',
+				'gradient-secondary': 'linear-gradient(135deg, hsl(var(--muted)) 0%, hsl(var(--background)) 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

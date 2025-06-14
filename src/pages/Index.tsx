@@ -17,14 +17,10 @@ const Index = () => {
       <Hero />
       <Overview />
       <Instructor />
-      <Schedule />
       <CourseBreakdown />
-      <WhatYoullLearn />
+      <Schedule />
       <Tools />
       <CapstoneProject />
-      <WhatYoullGain />
-      <Testimonials />
-      <Requirements />
       <CTAFooter />
     </div>
   );
