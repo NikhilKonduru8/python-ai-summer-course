@@ -61,7 +61,7 @@ const Requirements = () => {
               </h3>
               <Button 
                 size="lg" 
-                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105"
+                className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-all transform hover:scale-105 shadow-lg"
                 asChild
               >
                 <a 

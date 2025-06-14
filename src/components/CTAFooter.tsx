@@ -33,7 +33,7 @@ const CTAFooter = () => {
             <Button 
               size="lg" 
               variant="secondary"
-              className="text-xl px-12 py-6 bg-primary-foreground text-primary hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg"
+              className="text-xl px-12 py-6 bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-all transform hover:scale-105 shadow-lg"
               asChild
             >
               <a 

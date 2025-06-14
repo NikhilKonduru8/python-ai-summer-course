@@ -15,24 +15,24 @@ const CourseBreakdown = () => {
       week: "Week 2", 
       title: "Control Flow, Functions & File I/O",
       icon: FileText,
-      topics: "if/elif/else, for and while loops, Functions, lambda, *args/**kwargs, Optional: List Comprehension",
-      project: "File formats: .csv, .json, .xlsx",
+      topics: "Making decisions with if/elif/else, Using loops for repetition, Creating reusable functions, Understanding lambda expressions, Optional: List Comprehension",
+      project: "Working with different file formats (.csv, .json, .xlsx) and building a simple file processing project",
       color: "from-blue-500 to-purple-500"
     },
     {
       week: "Week 3",
       title: "Data & Visualization", 
       icon: Calendar,
-      topics: "What is data? Types of data, how it's collected (cookies, real-world use), Tools: pandas for data handling, matplotlib for visualization",
-      project: "EDA (Exploratory Data Analysis): Discovering patterns, spotting anomalies, Intro to Kaggle",
+      topics: "Understanding what data is and how it's collected in the real world, Using pandas to organize data, Creating charts with matplotlib",
+      project: "Finding interesting patterns in datasets, Spotting unusual data points, Exploring real datasets from Kaggle",
       color: "from-green-500 to-blue-500"
     },
     {
       week: "Week 4",
       title: "Machine Learning",
       icon: Search,
-      topics: "Supervised vs Unsupervised learning, Train/Test split, Model types: Linear Regression, KNN, Decision Tree",
-      project: "Evaluation metrics: accuracy, RMSE, confusion matrix, Data cleaning: label encoding, NaN handling, Tool: scikit-learn",
+      topics: "Introduction to machine learning - how computers learn from data, Teaching computers to make predictions, Building your first prediction models",
+      project: "Measuring how well your models perform, Cleaning messy data for better results, Using scikit-learn to build ML models easily",
       color: "from-orange-500 to-red-500"
     }
   ];

@@ -36,7 +36,7 @@ const Overview = () => {
             <div className="text-center">
               <Button 
                 size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105"
+                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-all transform hover:scale-105 shadow-lg"
                 asChild
               >
                 <a 

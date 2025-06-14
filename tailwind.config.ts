@@ -67,8 +67,8 @@ export default {
 				'inter': ['Inter', 'sans-serif'],
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)',
-				'gradient-secondary': 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)',
+				'gradient-primary': 'linear-gradient(135deg, #1E2A38 0%, #3B82F6 100%)',
+				'gradient-secondary': 'linear-gradient(135deg, #F9FAFB 0%, #ffffff 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
