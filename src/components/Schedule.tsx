@@ -6,31 +6,31 @@ const schedule = [
     {
       week: "Week 1",
       topics: "Python Review",
-      dates: "June 17 & 19, 2025",
+      dates: "June 24 & 26, 2025",
       color: "from-blue-500 to-cyan-500"
     },
     {
       week: "Week 2", 
       topics: "Control Flow, Functions, File I/O",
-      dates: "June 24 & 26, 2025",
+      dates: "July 1 & 3, 2025",
       color: "from-green-500 to-emerald-500"
     },
     {
       week: "Week 3",
       topics: "Data & Visualization",
-      dates: "July 1 & 3, 2025",
+      dates: "July 8 & 10, 2025",
       color: "from-purple-500 to-violet-500"
     },
     {
       week: "Week 4",
       topics: "Machine Learning & Capstone",
-      dates: "July 8 & 10, 2025",
+      dates: "July 15 & 17, 2025",
       color: "from-orange-500 to-red-500"
     },
     {
       week: "Week 5",
       topics: "Final Projects & Presentations",
-      dates: "July 15 & 17, 2025",
+      dates: "July 22 & 24, 2025",
       color: "from-indigo-500 to-purple-500"
     }
   ];
