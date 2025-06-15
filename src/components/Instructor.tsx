@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Mail, Code, GraduationCap, Trophy } from "lucide-react";
+import { Mail, Code, GraduationCap, Trophy, ExternalLink } from "lucide-react";
 
 const Instructor = () => {
   const { elementRef, isVisible } = useScrollAnimation();
@@ -12,7 +12,8 @@ const Instructor = () => {
       background: "Experienced in teaching coding fundamentals and building projects with real-world applications.",
       goal: "Making data science and ML accessible through practical, hands-on learning.",
       avatar: "👨‍💻",
-      email: "nikhilkonduru8@gmail.com"
+      email: "nikhilkonduru8@gmail.com",
+      portfolio: "https://github.com/NikhilKonduru8/NKonduru-DevPortfolio"
     },
     {
       name: "Arnav Garg",
@@ -65,11 +66,21 @@ const Instructor = () => {
                       <h3 className="text-3xl font-bold mb-3 text-primary-foreground group-hover:text-accent transition-colors duration-300">
                         {instructor.name}
                       </h3>
-                      <div className="flex items-center gap-2 mb-6 text-primary-foreground/70">
-                        <Mail className="w-4 h-4" />
-                        <a href={`mailto:${instructor.email}`} className="hover:text-accent transition-colors text-sm underline">
-                          {instructor.email}
-                        </a>
+                      <div className="space-y-2 mb-6 text-primary-foreground/70">
+                        <div className="flex items-center gap-2">
+                          <Mail className="w-4 h-4" />
+                          <a href={`mailto:${instructor.email}`} className="hover:text-accent transition-colors text-sm underline">
+                            {instructor.email}
+                          </a>
+                        </div>
+                        {instructor.portfolio && (
+                          <div className="flex items-center gap-2">
+                            <ExternalLink className="w-4 h-4" />
+                            <a href={instructor.portfolio} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors text-sm underline">
+                              Portfolio
+                            </a>
+                          </div>
+                        )}
                       </div>
                       
                       <div className="space-y-6">
