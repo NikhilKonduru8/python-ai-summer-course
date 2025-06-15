@@ -34,8 +34,8 @@ const Overview = () => {
     },
     {
       icon: Zap,
-      title: "Fast-Track Learning",
-      description: "Accelerated curriculum designed to maximize learning in minimum time"
+      title: "Thorough Understanding",
+      description: "Thorough understanding of topics through multiple hands-on projects and examples"
     }
   ];
 
