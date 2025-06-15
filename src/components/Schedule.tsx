@@ -42,9 +42,12 @@ const schedule = [
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-foreground">
             Class Schedule
           </h2>
-           <p className="text-lg text-primary-foreground/90">
+           <p className="text-lg text-primary-foreground/90 mb-4">
              10 classes across 5 weeks, with each class lasting about 1 hour. Designed for ages 12-15.
            </p>
+           <div className="bg-accent-teal/20 backdrop-blur-sm border border-accent-teal/30 rounded-xl px-6 py-3 inline-block">
+             <p className="text-accent-teal font-semibold">📅 Tentative Class Timing: 2-3 PM</p>
+           </div>
         </div>
         
         <div className="space-y-6">
