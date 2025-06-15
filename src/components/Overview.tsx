@@ -54,7 +54,8 @@ const Overview = () => {
             Your AI Journey Starts Here
           </h2>
           <p className="text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            A comprehensive introduction to artificial intelligence and machine learning using Python
+            A comprehensive introduction to artificial intelligence and machine learning using Python.
+            <span className="block mt-4 text-lg font-semibold text-accent">Completely free online course delivered through Zoom sessions and Google Classroom</span>
           </p>
         </div>
         

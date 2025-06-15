@@ -28,7 +28,8 @@ const Hero = () => {
           </p>
           
           <p className="text-xl md:text-2xl mb-12 opacity-80 max-w-4xl mx-auto leading-relaxed">
-            Learn Python programming through hands-on projects and real-world applications
+            Learn Python programming through hands-on projects and real-world applications. 
+            <span className="block mt-2 text-lg font-semibold text-accent">100% Free • Online via Zoom • Google Classroom</span>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">

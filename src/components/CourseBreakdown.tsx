@@ -64,7 +64,7 @@ const CourseBreakdown = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {weeks.map((week, index) => {
             const IconComponent = week.icon;
             return (
@@ -106,29 +106,31 @@ const CourseBreakdown = () => {
           })}
         </div>
         
-        <Card className="mt-12 border-white/20 shadow-xl bg-background/10 backdrop-blur-sm">
-          <CardHeader>
-            <CardTitle className="text-2xl text-center text-primary-foreground">
-              Week 5: Capstone Project Presentation
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="text-center text-primary-foreground">
-            <div className="grid md:grid-cols-3 gap-6">
-              <div>
-                <h4 className="font-semibold mb-2">Choose Your Data</h4>
-                <p className="text-sm text-primary-foreground/80">Select a dataset and research question that interests you</p>
+        <div className="grid md:grid-cols-2 gap-8 mt-12">
+          <Card className="border-white/20 shadow-xl bg-background/10 backdrop-blur-sm md:col-span-2 mx-auto max-w-3xl">
+            <CardHeader>
+              <CardTitle className="text-2xl text-center text-primary-foreground">
+                Week 5: Capstone Project Presentation
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center text-primary-foreground">
+              <div className="grid md:grid-cols-3 gap-6">
+                <div>
+                  <h4 className="font-semibold mb-2">Choose Your Data</h4>
+                  <p className="text-sm text-primary-foreground/80">Select a dataset and research question that interests you</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Apply Your Skills</h4>
+                  <p className="text-sm text-primary-foreground/80">Use data visualization, EDA, ML modeling, and evaluation techniques</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Present Findings</h4>
+                  <p className="text-sm text-primary-foreground/80">Share your discoveries in a 2-5 minute presentation</p>
+                </div>
               </div>
-              <div>
-                <h4 className="font-semibold mb-2">Apply Your Skills</h4>
-                <p className="text-sm text-primary-foreground/80">Use data visualization, EDA, ML modeling, and evaluation techniques</p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Present Findings</h4>
-                <p className="text-sm text-primary-foreground/80">Share your discoveries in a 2-5 minute presentation</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );
