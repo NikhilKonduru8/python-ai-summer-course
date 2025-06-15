@@ -15,7 +15,7 @@ const Hero = () => {
         <div>
           <div className="mb-8">
             <span className="inline-block px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-pulse">
-              🚀 5-Week Intensive Program
+              🚀 5-Week Program for Ages 12-15
             </span>
           </div>
           
@@ -64,7 +64,7 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
               <div className="text-3xl font-bold text-accent mb-2">5 Weeks</div>
-              <div className="text-sm opacity-80">Intensive Learning</div>
+              <div className="text-sm opacity-80">Structured Learning</div>
             </div>
             <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
               <div className="text-3xl font-bold text-accent mb-2">Hands-On</div>

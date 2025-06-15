@@ -43,7 +43,7 @@ const schedule = [
             Class Schedule
           </h2>
            <p className="text-lg text-primary-foreground/90">
-             10 classes across 5 weeks, with each class lasting about 1 hour
+             10 classes across 5 weeks, with each class lasting about 1 hour. Designed for ages 12-15.
            </p>
         </div>
         

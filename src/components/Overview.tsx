@@ -10,7 +10,7 @@ const Overview = () => {
     {
       icon: Target,
       title: "Focused Learning",
-      description: "10 intensive sessions over 5 weeks with hands-on projects and practical applications"
+      description: "10 sessions over 5 weeks with hands-on projects and practical applications"
     },
     {
       icon: Rocket,
@@ -19,7 +19,7 @@ const Overview = () => {
     },
     {
       icon: BarChart3,
-      title: "Data Science",
+      title: "Visualization",
       description: "Learn to analyze and visualize real-world datasets using professional tools"
     },
     {
@@ -54,7 +54,7 @@ const Overview = () => {
             Your AI Journey Starts Here
           </h2>
           <p className="text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            A comprehensive introduction to artificial intelligence and machine learning using Python.
+            A comprehensive introduction to artificial intelligence and machine learning using Python, designed for students ages 12-15.
             <span className="block mt-4 text-lg font-semibold text-accent">Completely free online course delivered through Zoom sessions and Google Classroom</span>
           </p>
         </div>
@@ -100,7 +100,7 @@ const Overview = () => {
             </div>
             <h3 className="text-3xl font-bold mb-6">Ready to Get Started?</h3>
             <p className="text-xl mb-8 text-white max-w-2xl mx-auto">
-              A progressive 5-week journey from Python fundamentals to building your own ML project
+              Comfortable with basic python functions (such as print()), data types (variables), import/export, and committed to learn
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <div className="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-2xl">
