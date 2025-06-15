@@ -33,13 +33,13 @@ const CapstoneProject = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background font-inter">
+    <section className="py-20 px-4 bg-gradient-to-br from-primary via-primary/95 to-secondary text-primary-foreground font-inter relative overflow-hidden">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-foreground">
             Final Capstone Project
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-primary-foreground/90 max-w-3xl mx-auto">
             Put everything together in a real data science project that you can proudly showcase. 
             This isn't just homework - it's your first step into the world of AI and data science!
           </p>
@@ -49,7 +49,7 @@ const CapstoneProject = () => {
           {steps.map((item, index) => (
             <Card 
               key={index}
-              className="border-border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-card group overflow-hidden"
+              className="border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-background/10 backdrop-blur-sm group overflow-hidden"
             >
               <div className={`h-2 bg-gradient-to-r ${item.color}`}></div>
               <CardHeader>
@@ -61,12 +61,12 @@ const CapstoneProject = () => {
                     {item.icon}
                   </div>
                 </div>
-                <CardTitle className="text-xl text-card-foreground">
+                <CardTitle className="text-xl text-primary-foreground">
                   {item.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-primary-foreground/80 leading-relaxed">
                   {item.description}
                 </p>
               </CardContent>
@@ -74,12 +74,12 @@ const CapstoneProject = () => {
           ))}
         </div>
         
-        <Card className="border-border shadow-lg bg-gradient-secondary">
+        <Card className="border-white/20 shadow-xl bg-background/10 backdrop-blur-sm">
           <CardContent className="pt-8 pb-8 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-card-foreground">
+            <h3 className="text-2xl font-bold mb-4 text-primary-foreground">
               Real Impact, Real Results
             </h3>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
               Previous students have analyzed everything from video game sales to climate change data. 
               Your project will be uniquely yours, and you'll be amazed at what insights you can discover 
               when you have the right tools and knowledge!

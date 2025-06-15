@@ -6,7 +6,7 @@ const CTAFooter = () => {
     <section className="py-32 px-4 bg-gradient-premium text-primary-foreground relative overflow-hidden">
       
       <div className="container mx-auto max-w-7xl text-center relative z-10">
-        <div className="animate-on-scroll">
+        <div>
           <div className="mb-8">
             <span className="inline-block px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-lg font-bold mb-6">
               🚀 Ready to Transform Your Future?
