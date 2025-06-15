@@ -73,19 +73,6 @@ const CapstoneProject = () => {
             </Card>
           ))}
         </div>
-        
-        <Card className="border-white/20 shadow-xl bg-background/10 backdrop-blur-sm">
-          <CardContent className="pt-8 pb-8 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-primary-foreground">
-              Real Impact, Real Results
-            </h3>
-            <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
-              Previous students have analyzed everything from video game sales to climate change data. 
-              Your project will be uniquely yours, and you'll be amazed at what insights you can discover 
-              when you have the right tools and knowledge!
-            </p>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
