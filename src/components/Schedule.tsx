@@ -47,35 +47,31 @@ const schedule = [
            </p>
         </div>
         
-        <div className="space-y-6">
+        <div className="space-y-6 flex flex-col items-center">
           {schedule.map((item, index) => (
-            <div 
-              key={index} 
-              className={`${index >= 3 ? 'flex justify-center' : ''}`}
+            <Card 
+              key={index}
+              className={`border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-background/10 backdrop-blur-sm overflow-hidden w-full ${index >= 3 ? 'max-w-2xl' : 'max-w-full'}`}
             >
-              <Card 
-                className={`border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-background/10 backdrop-blur-sm overflow-hidden ${index >= 3 ? 'max-w-2xl' : ''}`}
-              >
-                <div className={`h-2 bg-gradient-to-r ${item.color}`}></div>
-                <CardContent className="pt-6">
-                  <div className="flex items-center justify-between flex-wrap gap-4">
-                    <div className="flex items-center gap-4">
-                      <div className={`p-3 rounded-full bg-gradient-to-r ${item.color} text-white`}>
-                        <Calendar size={24} />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-primary-foreground">{item.week}</h3>
-                        <p className="text-lg text-primary-foreground/80">{item.topics}</p>
-                      </div>
+              <div className={`h-2 bg-gradient-to-r ${item.color}`}></div>
+              <CardContent className="pt-6">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className={`p-3 rounded-full bg-gradient-to-r ${item.color} text-white`}>
+                      <Calendar size={24} />
                     </div>
-                    <div className="text-right">
-                      <p className="text-sm font-medium text-primary-foreground/70">Dates</p>
-                      <p className="text-sm text-primary-foreground">{item.dates}</p>
+                    <div>
+                      <h3 className="text-xl font-bold text-primary-foreground">{item.week}</h3>
+                      <p className="text-lg text-primary-foreground/80">{item.topics}</p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                  <div className="text-right">
+                    <p className="text-sm font-medium text-primary-foreground/70">Dates</p>
+                    <p className="text-sm text-primary-foreground">{item.dates}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
         
