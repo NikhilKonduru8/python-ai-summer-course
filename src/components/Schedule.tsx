@@ -2,30 +2,36 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
 
 const Schedule = () => {
-  const schedule = [
+const schedule = [
     {
       week: "Week 1",
       topics: "Python Review",
-      dates: "TBD - [Add date placeholders]",
+      dates: "June 17 & 19, 2025",
       color: "from-blue-500 to-cyan-500"
     },
     {
       week: "Week 2", 
       topics: "Control Flow, Functions, File I/O",
-      dates: "TBD - [Add date placeholders]",
+      dates: "June 24 & 26, 2025",
       color: "from-green-500 to-emerald-500"
     },
     {
       week: "Week 3",
       topics: "Data & Visualization",
-      dates: "TBD - [Add date placeholders]",
+      dates: "July 1 & 3, 2025",
       color: "from-purple-500 to-violet-500"
     },
     {
       week: "Week 4",
       topics: "Machine Learning & Capstone",
-      dates: "TBD - [Add date placeholders]",
+      dates: "July 8 & 10, 2025",
       color: "from-orange-500 to-red-500"
+    },
+    {
+      week: "Week 5",
+      topics: "Final Projects & Presentations",
+      dates: "July 15 & 17, 2025",
+      color: "from-indigo-500 to-purple-500"
     }
   ];
 
@@ -37,8 +43,8 @@ const Schedule = () => {
             Class Schedule
           </h2>
            <p className="text-lg text-primary-foreground/90">
-            8 classes across 4 weeks, with each class lasting about 1 hour
-          </p>
+             10 classes across 5 weeks, with each class lasting about 1 hour
+           </p>
         </div>
         
         <div className="space-y-6">
@@ -69,18 +75,6 @@ const Schedule = () => {
           ))}
         </div>
         
-        <Card className="mt-8 border-white/20 shadow-xl bg-background/10 backdrop-blur-sm">
-          <CardContent className="pt-6 text-center">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <Calendar className="text-accent" size={24} />
-              <h3 className="text-lg font-bold text-primary-foreground">Flexible Scheduling</h3>
-            </div>
-            <p className="text-primary-foreground/80">
-              Exact dates will be determined based on student availability. 
-              We'll work with you to find the best times that fit your summer schedule!
-            </p>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
