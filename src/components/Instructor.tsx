@@ -8,21 +8,19 @@ const Instructor = () => {
   const instructors = [
     {
       name: "Nikhil Konduru",
-      experience: "Student with experience in Python programming, with a focus on AI, machine learning, and teaching.",
+      experience: "4+ years of coding experience with a focus on AI, machine learning, and teaching.",
       background: "Experienced in teaching coding fundamentals and building projects with real-world applications.",
       goal: "Making data science and ML accessible through practical, hands-on learning.",
       avatar: "👨‍💻",
-      email: "nikhilkonduru8@gmail.com",
-      specialties: ["Python Programming", "Machine Learning", "AI Development"]
+      email: "nikhilkonduru8@gmail.com"
     },
     {
       name: "Arnav Garg",
-      experience: "Student with coding experience and expertise in machine learning and artificial intelligence.",
+      experience: "4+ years of coding experience and expertise in machine learning and artificial intelligence.",
       background: "Passionate about translating complex technical concepts into understandable learning experiences.",
       goal: "Empowering fellow students with technology skills.",
       avatar: "👨‍🎓",
-      email: "gargarnav10@gmail.com",
-      specialties: ["AI Development", "Algorithm Design", "Data Science"]
+      email: "gargarnav10@gmail.com"
     }
   ];
 
@@ -89,17 +87,6 @@ const Instructor = () => {
                             <h4 className="font-bold text-lg text-accent">Teaching Approach</h4>
                           </div>
                           <p className="text-primary-foreground/80 leading-relaxed">{instructor.background}</p>
-                        </div>
-                        
-                        <div>
-                          <h4 className="font-bold text-lg text-accent mb-3">Specialties</h4>
-                          <div className="flex flex-wrap gap-2">
-                            {instructor.specialties.map((specialty, idx) => (
-                              <span key={idx} className="px-3 py-1 bg-white/20 text-white rounded-full text-sm font-medium">
-                                {specialty}
-                              </span>
-                            ))}
-                          </div>
                         </div>
                       </div>
                     </div>
