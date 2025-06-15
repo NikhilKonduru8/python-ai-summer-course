@@ -15,7 +15,7 @@ const Hero = () => {
         <div>
           <div className="mb-8">
             <span className="inline-block px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-pulse">
-              🚀 4-Week Intensive Program
+              🚀 5-Week Intensive Program
             </span>
           </div>
           
@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
           
           <p className="text-xl md:text-2xl mb-12 opacity-80 max-w-4xl mx-auto leading-relaxed">
-            Transform your understanding of AI and data science through hands-on Python programming and real-world projects
+            Learn Python programming through hands-on projects and real-world applications
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
@@ -57,7 +57,7 @@ const Hero = () => {
           {/* Stats cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <div className="text-3xl font-bold text-accent mb-2">4 Weeks</div>
+              <div className="text-3xl font-bold text-accent mb-2">5 Weeks</div>
               <div className="text-sm opacity-80">Intensive Learning</div>
             </div>
             <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">

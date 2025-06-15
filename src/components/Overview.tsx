@@ -10,7 +10,7 @@ const Overview = () => {
     {
       icon: Target,
       title: "Focused Learning",
-      description: "8 intensive sessions over 4 weeks with hands-on projects and practical applications"
+      description: "10 intensive sessions over 5 weeks with hands-on projects and practical applications"
     },
     {
       icon: Rocket,
@@ -54,8 +54,7 @@ const Overview = () => {
             Your AI Journey Starts Here
           </h2>
           <p className="text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            A comprehensive introduction to artificial intelligence and machine learning using Python, 
-            designed for ambitious students ready to shape the future.
+            A comprehensive introduction to artificial intelligence and machine learning using Python
           </p>
         </div>
         
@@ -100,7 +99,7 @@ const Overview = () => {
             </div>
             <h3 className="text-3xl font-bold mb-6">Ready to Get Started?</h3>
             <p className="text-xl mb-8 text-white max-w-2xl mx-auto">
-              A progressive 4-week journey from Python fundamentals to building your own ML project
+              A progressive 5-week journey from Python fundamentals to building your own ML project
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <div className="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-2xl">

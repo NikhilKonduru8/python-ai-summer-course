@@ -7,45 +7,60 @@ const CourseBreakdown = () => {
       week: "Week 1",
       title: "Python Review",
       icon: Book,
-      topics: "Variables, Data Types (int, float, bool, list, tuple, dict)",
-      project: "Employee Database (dictionary-based lookup system)",
+      topics: "Variables and Data types (integers, floats, booleans, lists, tuples, dictionaries), Control Flow (if, elif, else, for, while), Functions (lambda functions, **args, **kwargs), List Comprehension, File/IO (.csv, .json, .xlsx)",
+      project: "Employee Database: Create a dictionary with employee ID and details, then make a program which allows the user to input the ID and retrieve name, salary, etc.",
       color: "from-purple-500 to-pink-500"
     },
     {
       week: "Week 2", 
-      title: "Control Flow, Functions & File I/O",
+      title: "Introduction to Data",
       icon: FileText,
-      topics: "Making decisions with if/elif/else, Using loops for repetition, Creating reusable functions, Understanding lambda expressions, Optional: List Comprehension",
-      project: "Working with different file formats (.csv, .json, .xlsx) and building a simple file processing project",
+      topics: "What is Data? Fundamental concepts of data collection (cookies, etc.), Rows, columns, and observations, Why data matters in AI/ML, Data types (Numeric, Categorical, Boolean, Datetime, Text), Common file formats",
+      project: "Data handling with pandas library - load, clean, add to, remove from, or manipulate data. Introduction to Kaggle platform.",
       color: "from-blue-500 to-purple-500"
     },
     {
       week: "Week 3",
-      title: "Data & Visualization", 
+      title: "Data Visualization & EDA", 
       icon: Calendar,
-      topics: "Understanding what data is and how it's collected in the real world, Using pandas to organize data, Creating charts with matplotlib",
-      project: "Finding interesting patterns in datasets, Spotting unusual data points, Exploring real datasets from Kaggle",
+      topics: "Introduction to data visualization with matplotlib.pyplot and numpy, Exploratory Data Analysis (EDA) - discovering patterns, spotting anomalies, testing hypotheses, checking assumptions",
+      project: "Create visualizations showing data correlations and patterns, perform initial investigations on real datasets",
       color: "from-green-500 to-blue-500"
     },
     {
       week: "Week 4",
       title: "Machine Learning",
       icon: Search,
-      topics: "Introduction to machine learning - how computers learn from data, Teaching computers to make predictions, Building your first prediction models",
-      project: "Measuring how well your models perform, Cleaning messy data for better results, Using scikit-learn to build ML models easily",
+      topics: "What is ML? Types: supervised vs unsupervised, Train/test split, Model types: Linear Regression, KNN, Decision Tree, Evaluation metrics: accuracy, RMSE, confusion matrix, Data preprocessing: label encoders, NaN removal",
+      project: "Fit a regression or classification model to a dataset, run evaluation reports, use scikit-learn for ML modeling",
       color: "from-orange-500 to-red-500"
+    },
+    {
+      week: "Week 5",
+      title: "Capstone Project",
+      icon: Search,
+      topics: "Use data to answer a question, Implement data visualization, exploratory data analysis, ML models, evaluation metrics, and preprocessing methods",
+      project: "Create a 2-5 minute presentation highlighting findings through data and methods used to discover them",
+      color: "from-red-500 to-orange-500"
     }
   ];
 
   return (
-    <section className="py-20 px-4 bg-secondary">
-      <div className="container mx-auto max-w-6xl">
+    <section className="py-32 px-4 bg-gradient-to-br from-primary via-primary/95 to-secondary text-primary-foreground relative overflow-hidden">
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }}></div>
+      </div>
+      
+      <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-secondary-foreground">
-            Course Breakdown
+          <h2 className="text-5xl md:text-7xl font-black mb-8 leading-tight bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent">
+            5-Week Curriculum
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A progressive 4-week journey from Python fundamentals to building your own ML project
+          <p className="text-2xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
+            A progressive 5-week journey from Python fundamentals to building your own ML project
           </p>
         </div>
         
@@ -55,7 +70,7 @@ const CourseBreakdown = () => {
             return (
               <Card 
                 key={index} 
-                className="border-border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-card"
+                className="border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-background/10 backdrop-blur-sm"
               >
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-4 mb-2">
@@ -63,25 +78,25 @@ const CourseBreakdown = () => {
                       <IconComponent size={24} />
                     </div>
                     <div>
-                      <CardDescription className="text-muted-foreground font-medium">
+                      <CardDescription className="text-primary-foreground/70 font-medium">
                         {week.week}
                       </CardDescription>
-                      <CardTitle className="text-xl text-card-foreground">
+                      <CardTitle className="text-xl text-primary-foreground">
                         {week.title}
                       </CardTitle>
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="text-card-foreground">
+                <CardContent className="text-primary-foreground">
                   <div className="mb-4">
-                    <h4 className="font-semibold mb-2 text-card-foreground">Topics:</h4>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
+                    <h4 className="font-semibold mb-2 text-primary-foreground">Topics:</h4>
+                    <p className="text-sm leading-relaxed text-primary-foreground/80">
                       {week.topics}
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-card-foreground">Project/Focus:</h4>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
+                    <h4 className="font-semibold mb-2 text-primary-foreground">Project/Focus:</h4>
+                    <p className="text-sm leading-relaxed text-primary-foreground/80">
                       {week.project}
                     </p>
                   </div>
@@ -91,25 +106,25 @@ const CourseBreakdown = () => {
           })}
         </div>
         
-        <Card className="mt-12 border-border shadow-lg bg-card">
+        <Card className="mt-12 border-white/20 shadow-xl bg-background/10 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="text-2xl text-center text-card-foreground">
-              Final Class: Capstone Project Presentation
+            <CardTitle className="text-2xl text-center text-primary-foreground">
+              Week 5: Capstone Project Presentation
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-center text-card-foreground">
+          <CardContent className="text-center text-primary-foreground">
             <div className="grid md:grid-cols-3 gap-6">
               <div>
-                <h4 className="font-semibold mb-2">Choose</h4>
-                <p className="text-sm text-muted-foreground">A dataset and question</p>
+                <h4 className="font-semibold mb-2">Choose Your Data</h4>
+                <p className="text-sm text-primary-foreground/80">Select a dataset and research question that interests you</p>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">Apply</h4>
-                <p className="text-sm text-muted-foreground">Data cleaning, visualization, ML modeling, and evaluation</p>
+                <h4 className="font-semibold mb-2">Apply Your Skills</h4>
+                <p className="text-sm text-primary-foreground/80">Use data visualization, EDA, ML modeling, and evaluation techniques</p>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">Present</h4>
-                <p className="text-sm text-muted-foreground">Findings in a 2–5 min slideshow or video</p>
+                <h4 className="font-semibold mb-2">Present Findings</h4>
+                <p className="text-sm text-primary-foreground/80">Share your discoveries in a 2-5 minute presentation</p>
               </div>
             </div>
           </CardContent>
