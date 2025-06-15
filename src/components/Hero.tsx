@@ -12,26 +12,26 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto max-w-6xl text-center relative z-10 px-4">
-        <div className="animate-on-scroll">
+        <div>
           <div className="mb-8">
             <span className="inline-block px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-pulse">
               🚀 4-Week Intensive Program
             </span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent animate-on-scroll stagger-delay-1">
+          <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent">
             Master AI & Machine Learning
           </h1>
           
-          <p className="text-3xl md:text-4xl mb-6 font-light text-primary-foreground/90 animate-on-scroll stagger-delay-2">
+          <p className="text-3xl md:text-4xl mb-6 font-light text-primary-foreground/90">
             Python Course for Students
           </p>
           
-          <p className="text-xl md:text-2xl mb-12 opacity-80 max-w-4xl mx-auto leading-relaxed animate-on-scroll stagger-delay-3">
+          <p className="text-xl md:text-2xl mb-12 opacity-80 max-w-4xl mx-auto leading-relaxed">
             Transform your understanding of AI and data science through hands-on Python programming and real-world projects
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12 animate-on-scroll stagger-delay-4">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <Button 
               size="lg" 
               className="text-xl px-16 py-8 bg-gradient-to-r from-accent to-secondary text-background hover:shadow-2xl transition-all transform hover:scale-105 shadow-xl font-bold border-0 rounded-2xl"
@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
           
           {/* Stats cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto animate-on-scroll stagger-delay-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
               <div className="text-3xl font-bold text-accent mb-2">4 Weeks</div>
               <div className="text-sm opacity-80">Intensive Learning</div>
