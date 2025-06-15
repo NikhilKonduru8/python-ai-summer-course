@@ -99,8 +99,8 @@ const Overview = () => {
               <span className="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full text-lg font-bold">📋 Prerequisites</span>
             </div>
             <h3 className="text-3xl font-bold mb-6">Ready to Get Started?</h3>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Basic Python knowledge required (variables, loops, functions). Perfect for students looking to expand their programming skills into AI and ML.
+            <p className="text-xl mb-8 text-white max-w-2xl mx-auto">
+              A progressive 4-week journey from Python fundamentals to building your own ML project
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <div className="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-2xl">

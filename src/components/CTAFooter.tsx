@@ -4,12 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 const CTAFooter = () => {
   return (
     <section className="py-32 px-4 bg-gradient-premium text-primary-foreground relative overflow-hidden">
-      {/* Enhanced background effects */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 left-10 w-96 h-96 bg-accent rounded-full mix-blend-multiply filter blur-3xl animate-float"></div>
-        <div className="absolute top-40 right-10 w-96 h-96 bg-secondary rounded-full mix-blend-multiply filter blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute -bottom-32 left-20 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
-      </div>
       
       <div className="container mx-auto max-w-7xl text-center relative z-10">
         <div className="animate-on-scroll">
