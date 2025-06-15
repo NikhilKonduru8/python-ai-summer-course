@@ -13,7 +13,7 @@ const Instructor = () => {
       goal: "Making data science and ML accessible through practical, hands-on learning.",
       avatar: "👨‍💻",
       email: "nikhilkonduru8@gmail.com",
-      specialties: ["Python Programming", "Machine Learning", "Data Science", "Education"]
+      specialties: ["Python Programming", "Machine Learning", "AI Development"]
     },
     {
       name: "Arnav Garg",
@@ -22,7 +22,7 @@ const Instructor = () => {
       goal: "Empowering fellow students with technology skills.",
       avatar: "👨‍🎓",
       email: "gargarnav10@gmail.com",
-      specialties: ["AI Development", "Algorithm Design", "Project Management", "Mentorship"]
+      specialties: ["AI Development", "Algorithm Design", "Data Science"]
     }
   ];
 
