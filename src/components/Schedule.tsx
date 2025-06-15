@@ -66,8 +66,10 @@ const schedule = [
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-sm font-medium text-primary-foreground/70">Dates</p>
-                    <p className="text-sm text-primary-foreground">{item.dates}</p>
+                    <p className="text-xs font-medium text-primary-foreground/60 mb-1 uppercase tracking-wide">Schedule</p>
+                    <div className="bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg border border-white/20">
+                      <p className="text-sm font-semibold text-primary-foreground">{item.dates}</p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
