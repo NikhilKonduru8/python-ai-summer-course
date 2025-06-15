@@ -27,10 +27,15 @@ const Hero = () => {
             Python Course for Students
           </p>
           
-          <p className="text-xl md:text-2xl mb-12 opacity-80 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl mb-8 opacity-80 max-w-4xl mx-auto leading-relaxed">
             Learn Python programming through hands-on projects and real-world applications. 
-            <span className="block mt-2 text-lg font-semibold text-accent">100% Free • Online via Zoom • Google Classroom</span>
           </p>
+          
+          <div className="mb-12 max-w-2xl mx-auto">
+            <div className="bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-2xl px-8 py-4 inline-block">
+              <span className="text-xl font-bold text-accent">100% Free • Online via Zoom • Google Classroom</span>
+            </div>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <Button 
@@ -43,7 +48,7 @@ const Hero = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Start Your Journey
+                Register
               </a>
             </Button>
             <div className="text-lg opacity-80 bg-background/10 backdrop-blur-sm px-6 py-4 rounded-xl">
