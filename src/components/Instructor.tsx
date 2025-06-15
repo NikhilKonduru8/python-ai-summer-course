@@ -116,8 +116,9 @@ const Instructor = () => {
             <h3 className="text-3xl font-bold mb-6">Proven Track Record</h3>
             <p className="text-xl leading-relaxed max-w-4xl mx-auto opacity-90">
               As fellow students, we understand the challenges of learning programming and data science. 
-              Our approach focuses on breaking down complex concepts into manageable steps and providing 
-              the support and guidance needed for successful learning.
+              Together we have participated and won multiple high school hackathons. Our approach focuses on 
+              breaking down complex concepts into manageable steps and providing the support and guidance 
+              needed for successful learning.
             </p>
           </div>
         </div>
