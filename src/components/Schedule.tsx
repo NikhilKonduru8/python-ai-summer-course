@@ -1,5 +1,6 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar } from "lucide-react";
+import { Calendar, Clock } from "lucide-react";
 
 const Schedule = () => {
 const schedule = [
@@ -42,11 +43,17 @@ const schedule = [
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-foreground">
             Class Schedule
           </h2>
-           <p className="text-lg text-primary-foreground/90 mb-4">
+           <p className="text-lg text-primary-foreground/90 mb-8">
              10 classes across 5 weeks, with each class lasting about 1 hour. Designed for ages 12-15.
            </p>
-           <div className="bg-accent-teal/20 backdrop-blur-sm border border-accent-teal/30 rounded-xl px-6 py-3 inline-block">
-             <p className="text-accent-teal font-semibold">📅 Tentative Class Timing: 2-3 PM</p>
+           
+           {/* Enhanced timing highlight */}
+           <div className="bg-gradient-to-r from-accent-teal/30 to-secondary-blue/30 backdrop-blur-sm border-2 border-accent-teal/50 rounded-2xl px-8 py-6 inline-block shadow-lg mb-4">
+             <div className="flex items-center justify-center gap-3">
+               <Clock className="text-accent-teal" size={24} />
+               <p className="text-xl font-bold text-accent-teal">📅 Tentative Class Timing: 2-3 PM</p>
+             </div>
+             <p className="text-sm text-primary-foreground/80 mt-2">All times are tentative and subject to confirmation</p>
            </div>
         </div>
         
