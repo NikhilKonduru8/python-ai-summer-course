@@ -3,14 +3,26 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const CTAFooter = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-primary text-primary-foreground">
-      <div className="container mx-auto max-w-5xl text-center">
-        <div className="fade-in">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8">
-            Start Your AI Journey
+    <section className="py-32 px-4 bg-gradient-premium text-primary-foreground relative overflow-hidden">
+      {/* Enhanced background effects */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-10 left-10 w-96 h-96 bg-accent rounded-full mix-blend-multiply filter blur-3xl animate-float"></div>
+        <div className="absolute top-40 right-10 w-96 h-96 bg-secondary rounded-full mix-blend-multiply filter blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -bottom-32 left-20 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+      </div>
+      
+      <div className="container mx-auto max-w-7xl text-center relative z-10">
+        <div className="animate-on-scroll">
+          <div className="mb-8">
+            <span className="inline-block px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-lg font-bold mb-6">
+              🚀 Ready to Transform Your Future?
+            </span>
+          </div>
+          <h2 className="text-6xl md:text-8xl font-black mb-12 leading-tight">
+            Start Your AI Journey Today
           </h2>
-          <p className="text-xl md:text-2xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
-            Learn the fundamentals of AI and machine learning to excel in your future studies
+          <p className="text-2xl md:text-3xl mb-16 opacity-90 max-w-5xl mx-auto leading-relaxed">
+            Join the next generation of innovators and master the technologies that will shape tomorrow
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12 text-left">

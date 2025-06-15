@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Overview from "@/components/Overview";
 import Instructor from "@/components/Instructor";
@@ -13,15 +14,30 @@ import CTAFooter from "@/components/CTAFooter";
 
 const Index = () => {
   return (
-    <div className="min-h-screen font-inter">
-      <Hero />
-      <Overview />
-      <Instructor />
-      <CourseBreakdown />
-      <Schedule />
-      <Tools />
-      <CapstoneProject />
-      <CTAFooter />
+    <div className="min-h-screen font-inter bg-gradient-to-br from-background via-muted/20 to-background">
+      <Navigation />
+      <div className="pt-16">
+        <Hero />
+        <div id="overview">
+          <Overview />
+        </div>
+        <div id="instructor">
+          <Instructor />
+        </div>
+        <div id="curriculum">
+          <CourseBreakdown />
+        </div>
+        <div id="schedule">
+          <Schedule />
+        </div>
+        <div id="tools">
+          <Tools />
+        </div>
+        <div id="project">
+          <CapstoneProject />
+        </div>
+        <CTAFooter />
+      </div>
     </div>
   );
 };
