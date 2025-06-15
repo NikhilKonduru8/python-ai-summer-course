@@ -16,7 +16,7 @@ const CTAFooter = () => {
             Start Your AI Journey Today
           </h2>
           <p className="text-2xl md:text-3xl mb-16 opacity-90 max-w-5xl mx-auto leading-relaxed">
-            Join the next generation of innovators and master the technologies that will shape tomorrow
+            Ready to start your Python and AI learning journey?
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12 text-left">
