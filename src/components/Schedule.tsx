@@ -30,13 +30,13 @@ const Schedule = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-secondary font-inter">
+    <section className="py-20 px-4 bg-gradient-to-br from-primary via-primary/95 to-secondary text-primary-foreground font-inter relative overflow-hidden">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-secondary-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-foreground">
             Class Schedule
           </h2>
-           <p className="text-lg text-secondary-foreground">
+           <p className="text-lg text-primary-foreground/90">
             8 classes across 4 weeks, with each class lasting about 1 hour
           </p>
         </div>
@@ -45,7 +45,7 @@ const Schedule = () => {
           {schedule.map((item, index) => (
             <Card 
               key={index}
-              className="border-border shadow-lg hover:shadow-xl transition-all duration-300 bg-card overflow-hidden"
+              className="border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-background/10 backdrop-blur-sm overflow-hidden"
             >
               <div className={`h-2 bg-gradient-to-r ${item.color}`}></div>
               <CardContent className="pt-6">
@@ -55,13 +55,13 @@ const Schedule = () => {
                       <Calendar size={24} />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-card-foreground">{item.week}</h3>
-                      <p className="text-lg text-muted-foreground">{item.topics}</p>
+                      <h3 className="text-xl font-bold text-primary-foreground">{item.week}</h3>
+                      <p className="text-lg text-primary-foreground/80">{item.topics}</p>
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-sm font-medium text-muted-foreground">Dates</p>
-                    <p className="text-sm text-card-foreground">{item.dates}</p>
+                    <p className="text-sm font-medium text-primary-foreground/70">Dates</p>
+                    <p className="text-sm text-primary-foreground">{item.dates}</p>
                   </div>
                 </div>
               </CardContent>
@@ -69,13 +69,13 @@ const Schedule = () => {
           ))}
         </div>
         
-        <Card className="mt-8 border-border shadow-lg bg-card">
+        <Card className="mt-8 border-white/20 shadow-xl bg-background/10 backdrop-blur-sm">
           <CardContent className="pt-6 text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
-              <Calendar className="text-primary" size={24} />
-              <h3 className="text-lg font-bold text-card-foreground">Flexible Scheduling</h3>
+              <Calendar className="text-accent" size={24} />
+              <h3 className="text-lg font-bold text-primary-foreground">Flexible Scheduling</h3>
             </div>
-            <p className="text-muted-foreground">
+            <p className="text-primary-foreground/80">
               Exact dates will be determined based on student availability. 
               We'll work with you to find the best times that fit your summer schedule!
             </p>
