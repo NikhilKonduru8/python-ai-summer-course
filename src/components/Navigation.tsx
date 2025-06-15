@@ -42,15 +42,15 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-border shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary-dark/95 backdrop-blur-md border-b border-border shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-br from-accent-teal to-secondary-blue rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">ML</span>
             </div>
-            <span className="font-bold text-xl text-foreground">Python AI Course</span>
+            <span className="font-bold text-xl text-primary-foreground">Python AI Course</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -59,10 +59,10 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-accent-foreground ${
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-accent-teal hover:text-primary-foreground ${
                   activeSection === item.href.slice(1)
-                    ? "bg-primary text-primary-foreground shadow-md"
-                    : "text-muted-foreground"
+                    ? "bg-accent-teal text-primary-foreground shadow-md"
+                    : "text-gray-300"
                 }`}
               >
                 {item.name}
@@ -70,7 +70,7 @@ const Navigation = () => {
             ))}
             <Button 
               asChild
-              className="ml-4 bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+              className="ml-4 bg-gradient-to-r from-accent-teal to-secondary-blue text-primary-foreground hover:shadow-glow transform hover:scale-105 transition-all duration-300"
             >
               <a 
                 href="https://forms.gle/QsRtV6VFTDKfWFcF9" 

@@ -36,7 +36,7 @@ const schedule = [
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-primary via-primary/95 to-secondary text-primary-foreground font-inter relative overflow-hidden">
+    <section className="py-20 px-4 bg-section-dark-gradient text-primary-foreground font-inter relative overflow-hidden">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-foreground">
