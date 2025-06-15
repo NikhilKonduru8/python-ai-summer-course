@@ -43,7 +43,7 @@ const Hero = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Register
+                Start Your Journey
               </a>
             </Button>
             <div className="text-lg opacity-80 bg-background/10 backdrop-blur-sm px-6 py-4 rounded-xl">

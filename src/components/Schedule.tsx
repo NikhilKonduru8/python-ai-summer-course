@@ -51,7 +51,7 @@ const schedule = [
           {schedule.map((item, index) => (
             <Card 
               key={index}
-              className={`border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-background/10 backdrop-blur-sm overflow-hidden ${index >= 3 ? 'ml-16' : ''}`}
+              className="border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-background/10 backdrop-blur-sm overflow-hidden"
             >
               <div className={`h-2 bg-gradient-to-r ${item.color}`}></div>
               <CardContent className="pt-6">
