@@ -6,6 +6,7 @@ import Schedule from "@/components/Schedule";
 import CourseBreakdown from "@/components/CourseBreakdown";
 import Tools from "@/components/Tools";
 import CapstoneProject from "@/components/CapstoneProject";
+import FAQ from "@/components/FAQ";
 import CTAFooter from "@/components/CTAFooter";
 
 const Index = () => {
@@ -31,6 +32,9 @@ const Index = () => {
         </div>
         <div id="project">
           <CapstoneProject />
+        </div>
+        <div id="faq">
+          <FAQ />
         </div>
         <CTAFooter />
       </div>
