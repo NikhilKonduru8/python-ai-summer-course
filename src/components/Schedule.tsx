@@ -47,11 +47,11 @@ const schedule = [
            </p>
         </div>
         
-        <div className="space-y-6 flex flex-col items-center">
+        <div className="space-y-6">
           {schedule.map((item, index) => (
             <Card 
               key={index}
-              className={`border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-background/10 backdrop-blur-sm overflow-hidden w-full ${index >= 3 ? 'max-w-2xl' : 'max-w-full'}`}
+              className={`border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-background/10 backdrop-blur-sm overflow-hidden ${index >= 3 ? 'ml-32' : ''}`}
             >
               <div className={`h-2 bg-gradient-to-r ${item.color}`}></div>
               <CardContent className="pt-6">
