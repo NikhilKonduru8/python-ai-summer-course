@@ -1,5 +1,3 @@
-
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock } from "lucide-react";
 
@@ -52,7 +50,7 @@ const schedule = [
            <div className="bg-gradient-to-r from-accent-teal/30 to-secondary-blue/30 backdrop-blur-sm border-2 border-accent-teal/50 rounded-2xl px-8 py-6 inline-block shadow-lg mb-4">
              <div className="flex items-center justify-center gap-3 mb-3">
                <Clock className="text-accent-teal" size={24} />
-               <p className="text-xl font-bold text-accent-teal">📅 Two Sessions Available Each Day</p>
+               <p className="text-xl font-bold text-accent-teal">📅 Two Sessions Available Each Day: Tuesday And Thursday</p>
              </div>
              <div className="space-y-2">
                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
@@ -102,4 +100,3 @@ const schedule = [
 };
 
 export default Schedule;
-
