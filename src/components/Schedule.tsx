@@ -60,7 +60,7 @@ const schedule = [
                  <p className="text-lg font-semibold text-accent-teal">Session 2: 2 PM - 3 PM</p>
                </div>
              </div>
-             <p className="text-sm text-primary-foreground/80 mt-3">All times are tentative and subject to confirmation</p>
+             
            </div>
         </div>
         
