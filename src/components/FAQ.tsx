@@ -1,3 +1,4 @@
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const FAQ = () => {
@@ -9,6 +10,10 @@ const FAQ = () => {
     {
       question: "What will happen if I miss a class?",
       answer: "We will be posting recordings of the meetings and slides with information in our Google Classroom after every class."
+    },
+    {
+      question: "Is there any course material that I can review?",
+      answer: "We HIGHLY recommend reviewing your python fundamentals using these resources: W3 Schools Python Tutorial: https://www.w3schools.com/python/, 30-minute Python Introduction Video: youtu.be/Ro_MScTDfU4?si=LUzsiua7dTu_LDy6"
     }
   ];
 
