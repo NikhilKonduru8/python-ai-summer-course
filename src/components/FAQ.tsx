@@ -13,7 +13,41 @@ const FAQ = () => {
     },
     {
       question: "Is there any course material that I can review?",
-      answer: "We HIGHLY recommend reviewing your python fundamentals using these resources: W3 Schools Python Tutorial: https://www.w3schools.com/python/, 30-minute Python Introduction Video: youtu.be/Ro_MScTDfU4?si=LUzsiua7dTu_LDy6"
+      answer: (
+        <div className="space-y-3">
+          <p>We HIGHLY recommend reviewing your Python fundamentals using these resources:</p>
+          <ul className="space-y-2 ml-4">
+            <li className="flex items-start">
+              <span className="text-muted-foreground mr-2">•</span>
+              <div>
+                <strong>W3 Schools Python Tutorial:</strong>{" "}
+                <a 
+                  href="https://www.w3schools.com/python/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                >
+                  https://www.w3schools.com/python/
+                </a>
+              </div>
+            </li>
+            <li className="flex items-start">
+              <span className="text-muted-foreground mr-2">•</span>
+              <div>
+                <strong>30-minute Python Introduction Video:</strong>{" "}
+                <a 
+                  href="https://youtu.be/Ro_MScTDfU4?si=LUzsiua7dTu_LDy6" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                >
+                  youtu.be/Ro_MScTDfU4?si=LUzsiua7dTu_LDy6
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      )
     }
   ];
 
