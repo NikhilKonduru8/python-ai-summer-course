@@ -1,4 +1,5 @@
 
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const FAQ = () => {
@@ -25,7 +26,7 @@ const FAQ = () => {
                   href="https://www.w3schools.com/python/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors break-all"
                 >
                   https://www.w3schools.com/python/
                 </a>
@@ -39,7 +40,7 @@ const FAQ = () => {
                   href="https://youtu.be/Ro_MScTDfU4?si=LUzsiua7dTu_LDy6" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors break-all"
                 >
                   youtu.be/Ro_MScTDfU4?si=LUzsiua7dTu_LDy6
                 </a>
@@ -52,13 +53,13 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-muted/30 via-background to-muted/20 relative overflow-hidden">
+    <section className="py-16 md:py-20 px-4 bg-gradient-to-br from-muted/30 via-background to-muted/20 relative overflow-hidden">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-foreground">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Common questions about the course and what you need to get started
           </p>
         </div>
@@ -68,12 +69,12 @@ const FAQ = () => {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="border border-border/20 rounded-lg bg-card/50 backdrop-blur-sm px-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="border border-border/20 rounded-lg bg-card/50 backdrop-blur-sm px-4 md:px-6 shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              <AccordionTrigger className="text-left text-lg font-semibold text-card-foreground hover:text-accent transition-colors">
+              <AccordionTrigger className="text-left text-base md:text-lg font-semibold text-card-foreground hover:text-accent transition-colors py-4 leading-relaxed">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+              <AccordionContent className="text-muted-foreground leading-relaxed pt-2 pb-4 text-sm md:text-base">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
@@ -85,3 +86,4 @@ const FAQ = () => {
 };
 
 export default FAQ;
+
