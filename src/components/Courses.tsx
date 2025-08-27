@@ -95,7 +95,7 @@ const Courses = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 gap-12">
           {courses.map((course, index) => {
             const IconComponent = course.icon;
             return (
@@ -125,8 +125,8 @@ const Courses = () => {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
+                  <CardContent className="pb-6">
+                    <div className="space-y-4 mb-8">
                       {course.classes.map((cls) => (
                         <div key={cls.number} className="border-l-4 border-black pl-4">
                           <h4 className="font-semibold text-black mb-1">
@@ -138,7 +138,7 @@ const Courses = () => {
                         </div>
                       ))}
                     </div>
-                    <Button className="w-full mt-8 bg-black text-white hover:bg-gray-800" size="lg">
+                    <Button className="w-full bg-black text-white hover:bg-gray-800" size="lg">
                       <a href="https://forms.gle/HaU79P3qhA4pCdhr5" target="_blank" rel="noopener noreferrer">
                         Register for This Course
                       </a>

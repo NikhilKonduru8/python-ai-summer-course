@@ -29,7 +29,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-xl font-bold text-foreground">Python Academy</h1>
+            <h1 className="text-xl font-bold text-foreground">Python Mastery</h1>
           </div>
           
           {/* Desktop Navigation */}
@@ -54,7 +54,7 @@ const Navigation = () => {
                   </button>
                 )
               ))}
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button asChild className="bg-primary text-black hover:bg-primary/90">
                 <a href="https://forms.gle/HaU79P3qhA4pCdhr5" target="_blank" rel="noopener noreferrer">
                   Register Now
                 </a>
@@ -97,7 +97,7 @@ const Navigation = () => {
                   </button>
                 )
               ))}
-              <Button asChild className="w-full mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button asChild className="w-full mt-4 bg-primary text-black hover:bg-primary/90">
                 <a href="https://forms.gle/HaU79P3qhA4pCdhr5" target="_blank" rel="noopener noreferrer">
                   Register Now
                 </a>

@@ -51,8 +51,8 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Scroll down arrow animation */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* Scroll down arrow animation - properly centered */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center">
         <a href="#courses" className="flex flex-col items-center text-white/80 hover:text-white transition-colors">
           <span className="text-sm mb-2">Scroll for more</span>
           <ChevronDown className="w-6 h-6" />
