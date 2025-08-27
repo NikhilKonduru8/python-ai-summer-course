@@ -1,74 +1,55 @@
+
 import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Code, Zap } from "lucide-react";
 
 const Hero = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-hero-gradient text-primary-foreground overflow-hidden">
-      
-      {/* Subtle grid pattern overlay */}
-      <div className="absolute inset-0 bg-subtle-grid opacity-30"></div>
-      
-      <div className="container mx-auto max-w-6xl text-center relative z-10 px-4">
-        <div>
-          <div className="mb-8">
-            <span className="inline-block px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-pulse">
-              🚀 5-Week Program for Ages 12-15
-            </span>
+    <section ref={elementRef} className="min-h-screen flex items-center justify-center bg-hero-gradient text-primary-foreground relative overflow-hidden">
+      <div className="container mx-auto px-4 text-center relative z-10">
+        <div className={`${isVisible ? 'animate-on-scroll animate-in' : 'animate-on-scroll'}`}>
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
+            <Code className="w-5 h-5" />
+            <span className="text-sm font-medium">Learn Python & Competitive Programming</span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight gradient-text">
-            Master AI & Machine Learning
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-8 leading-tight">
+            From <span className="gradient-text">Zero to Hero</span>
+            <br />
+            <span className="text-white">Master Python</span>
           </h1>
           
-          <p className="text-3xl md:text-4xl mb-6 font-light text-primary-foreground/90">
-            Python Course for Students
+          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto mb-12 leading-relaxed">
+            Join our comprehensive Python courses designed for beginners and competitive programmers. 
+            Learn from experienced student instructors who understand your journey.
           </p>
           
-          <p className="text-xl md:text-2xl mb-8 opacity-80 max-w-4xl mx-auto leading-relaxed">
-            Learn Python programming through hands-on projects and real-world applications. 
-          </p>
-          
-          <div className="mb-12 max-w-2xl mx-auto">
-            <div className="bg-accent-teal/20 backdrop-blur-sm border border-accent-teal/30 rounded-2xl px-8 py-4 inline-block">
-              <span className="text-xl font-bold text-accent-teal">100% Free • Online via Zoom • Google Classroom</span>
-            </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
-              className="text-xl px-16 py-8 bg-gradient-to-r from-accent-teal to-secondary-blue text-primary-foreground hover:shadow-2xl transition-all transform hover:scale-105 shadow-glow shadow-glow-hover font-bold border-0 rounded-2xl"
-              asChild
-            >
-              <a 
-                href="https://forms.gle/QsRtV6VFTDKfWFcF9" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Register
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+            <Button size="lg" className="bg-white text-black hover:bg-white/90 text-lg px-8 py-4">
+              <a href="https://forms.gle/HaU79P3qhA4pCdhr5" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Zap className="w-5 h-5" />
+                Register Now
               </a>
             </Button>
-            <div className="text-lg opacity-80 bg-background/10 backdrop-blur-sm px-6 py-4 rounded-xl">
-              <span className="font-medium block text-center">Questions?</span>
-              <div className="text-sm space-y-1 mt-2">
-                <div>nikhilkonduru8@gmail.com</div>
-                <div>gargarnav10@gmail.com</div>
-              </div>
-            </div>
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg px-8 py-4">
+              <a href="#courses">View Courses</a>
+            </Button>
           </div>
           
-          {/* Stats cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
-            <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <div className="text-3xl font-bold text-accent-teal mb-2">5 Weeks</div>
-              <div className="text-sm opacity-80">Structured Learning</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-white mb-2">20+</div>
+              <div className="text-white/80">Students Taught</div>
             </div>
-            <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <div className="text-3xl font-bold text-accent-teal mb-2">Hands-On</div>
-              <div className="text-sm opacity-80">Project Based</div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-white mb-2">4.80★</div>
+              <div className="text-white/80">Average Rating</div>
             </div>
-            <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <div className="text-3xl font-bold text-accent-teal mb-2">Beginner</div>
-              <div className="text-sm opacity-80">Friendly</div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-white mb-2">6</div>
+              <div className="text-white/80">Weeks Total</div>
             </div>
           </div>
         </div>
