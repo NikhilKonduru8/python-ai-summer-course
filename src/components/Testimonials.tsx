@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Star, Quote } from "lucide-react";
@@ -35,7 +34,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section ref={elementRef} className="py-20 px-4 bg-section-gradient">
+    <section id="testimonials" ref={elementRef} className="py-20 px-4 bg-section-gradient">
       <div className="container mx-auto max-w-7xl">
         <div className={`text-center mb-16 ${isVisible ? 'animate-on-scroll animate-in' : 'animate-on-scroll'}`}>
           <h2 className="text-4xl md:text-6xl font-black mb-8 text-black">
