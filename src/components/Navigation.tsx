@@ -10,7 +10,6 @@ const Navigation = () => {
     { name: "Courses", href: "#courses" },
     { name: "Instructors", href: "#instructors" },
     { name: "Testimonials", href: "#testimonials" },
-    { name: "Previous Classes", href: "/previous-classes" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -34,7 +33,7 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button asChild>
+              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <a href="https://forms.gle/HaU79P3qhA4pCdhr5" target="_blank" rel="noopener noreferrer">
                   Register Now
                 </a>
@@ -67,7 +66,7 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button asChild className="w-full mt-4">
+              <Button asChild className="w-full mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
                 <a href="https://forms.gle/HaU79P3qhA4pCdhr5" target="_blank" rel="noopener noreferrer">
                   Register Now
                 </a>

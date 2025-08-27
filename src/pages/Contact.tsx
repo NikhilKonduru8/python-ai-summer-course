@@ -30,7 +30,7 @@ const Contact = () => {
         {/* Header */}
         <section className="py-16 px-4 bg-hero-gradient text-primary-foreground">
           <div className="container mx-auto max-w-6xl">
-            <Button variant="outline" className="mb-8 border-white text-white hover:bg-white/10" asChild>
+            <Button variant="outline" className="mb-8 border-white text-black bg-white hover:bg-white/90" asChild>
               <a href="/">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Home

@@ -15,7 +15,7 @@ const Hero = () => {
             <span className="text-sm font-medium text-white">Learn Python & Competitive Programming</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-8 leading-tight text-white">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight text-white">
             Choose Your <span className="text-gray-300">Python Path</span>
             <br />
             <span className="text-white">Beginner to Expert</span>
@@ -33,7 +33,7 @@ const Hero = () => {
                 Register Now
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg px-8 py-4">
+            <Button variant="outline" size="lg" className="border-white text-black bg-white hover:bg-white/90 text-lg px-8 py-4">
               <a href="#courses">View Courses</a>
             </Button>
           </div>

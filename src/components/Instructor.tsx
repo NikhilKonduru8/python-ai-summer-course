@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Mail, Code, GraduationCap, Trophy, Award } from "lucide-react";
+import { Mail, Code, GraduationCap, Trophy, Award, Github, Linkedin } from "lucide-react";
 
 const Instructor = () => {
   const { elementRef, isVisible } = useScrollAnimation();
@@ -29,7 +29,9 @@ const Instructor = () => {
         "Successful secretary of the ACE coding club at Hart Middle School, managing operations and member engagement"
       ],
       avatar: "👨‍💻",
-      email: "nikhilkonduru8@gmail.com"
+      email: "nikhilkonduru8@gmail.com",
+      github: "https://github.com/NikhilKonduru8",
+      linkedin: "https://www.linkedin.com/in/nikhil-konduru-7b6828372/"
     }
   ];
 
@@ -61,11 +63,23 @@ const Instructor = () => {
                       <h3 className="text-2xl font-bold mb-3 text-white">
                         {instructor.name}
                       </h3>
-                      <div className="flex items-center justify-center sm:justify-start gap-2 mb-6">
-                        <Mail className="w-4 h-4 text-white" />
-                        <a href={`mailto:${instructor.email}`} className="hover:text-white/80 transition-colors text-sm underline text-white">
-                          {instructor.email}
-                        </a>
+                      <div className="flex items-center justify-center sm:justify-start gap-4 mb-6">
+                        <div className="flex items-center gap-2">
+                          <Mail className="w-4 h-4 text-white" />
+                          <a href={`mailto:${instructor.email}`} className="hover:text-white/80 transition-colors text-sm underline text-white">
+                            {instructor.email}
+                          </a>
+                        </div>
+                        {instructor.github && (
+                          <a href={instructor.github} target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
+                            <Github className="w-4 h-4 text-white" />
+                          </a>
+                        )}
+                        {instructor.linkedin && (
+                          <a href={instructor.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
+                            <Linkedin className="w-4 h-4 text-white" />
+                          </a>
+                        )}
                       </div>
                       
                       <div className="mb-6">
