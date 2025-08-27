@@ -11,7 +11,7 @@ const Instructor = () => {
       name: "Arnav Garg",
       experience: "4+ years of coding experience",
       achievements: [
-        "Multiple hackathon awards won",
+        "Multiple hackathon awards won across various competitions",
         "Multiple AI-powered projects covering advanced neural networks and machine learning models",
         "Successful vice president of the ACE coding club at Hart Middle School",
         "Example-based teaching style focusing on turning complex topics into understandable chunks"
@@ -23,10 +23,10 @@ const Instructor = () => {
       name: "Nikhil Konduru",
       experience: "4+ years of coding experience",
       achievements: [
-        "Multiple hackathon award winner",
-        "Made multiple successful SAAS apps published to the public",
-        "Interned at an AI Startup as an 8th grader",
-        "Successful secretary of the ACE coding club at Hart Middle School"
+        "Multiple hackathon award winner with recognition in regional and national competitions",
+        "Made multiple successful SAAS apps published to the public with active user bases",
+        "Interned at an AI Startup as an 8th grader, contributing to real-world projects",
+        "Successful secretary of the ACE coding club at Hart Middle School, managing operations and member engagement"
       ],
       avatar: "👨‍💻",
       email: "nikhilkonduru8@gmail.com"
@@ -62,8 +62,8 @@ const Instructor = () => {
                         {instructor.name}
                       </h3>
                       <div className="flex items-center justify-center sm:justify-start gap-2 mb-6">
-                        <Mail className="w-4 h-4" />
-                        <a href={`mailto:${instructor.email}`} className="hover:text-white/80 transition-colors text-sm underline">
+                        <Mail className="w-4 h-4 text-white" />
+                        <a href={`mailto:${instructor.email}`} className="hover:text-white/80 transition-colors text-sm underline text-white">
                           {instructor.email}
                         </a>
                       </div>
@@ -106,8 +106,8 @@ const Instructor = () => {
                 Our Track Record
               </span>
             </div>
-            <h3 className="text-3xl font-bold mb-6">Proven Success</h3>
-            <p className="text-xl leading-relaxed max-w-4xl mx-auto opacity-90">
+            <h3 className="text-3xl font-bold mb-6 text-white">Proven Success</h3>
+            <p className="text-xl leading-relaxed max-w-4xl mx-auto text-white/90">
               Together, we taught a very successful AI/ML class in the summer, covering everything from Python basics 
               to Regression and Classification using Machine Learning. The class had over 20 students and we held 
               1-hour classes weekly with outstanding results.

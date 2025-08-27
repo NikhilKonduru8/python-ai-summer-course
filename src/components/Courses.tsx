@@ -87,10 +87,10 @@ const Courses = () => {
     <section id="courses" ref={elementRef} className="py-20 px-4 bg-section-gradient">
       <div className="container mx-auto max-w-7xl">
         <div className={`text-center mb-16 ${isVisible ? 'animate-on-scroll animate-in' : 'animate-on-scroll'}`}>
-          <h2 className="text-4xl md:text-6xl font-black mb-8 text-foreground">
+          <h2 className="text-4xl md:text-6xl font-black mb-8 text-black">
             Choose Your Path
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Two comprehensive courses designed to take you from beginner to competitive programmer
           </p>
         </div>
@@ -103,23 +103,23 @@ const Courses = () => {
                 key={index}
                 className={`${isVisible ? 'animate-on-scroll-enhanced animate-in' : 'animate-on-scroll-enhanced'} stagger-delay-${index + 1}`}
               >
-                <Card className="h-full card-hover bg-card border-2 border-border shadow-xl">
+                <Card className="h-full card-hover bg-white border-2 border-gray-200 shadow-xl">
                   <CardHeader className="text-center pb-6">
-                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <IconComponent className="w-8 h-8 text-primary-foreground" />
+                    <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
+                      <IconComponent className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-2xl font-bold text-card-foreground mb-2">
+                    <CardTitle className="text-2xl font-bold text-black mb-2">
                       {course.title}
                     </CardTitle>
-                    <CardDescription className="text-lg text-muted-foreground">
+                    <CardDescription className="text-lg text-gray-600">
                       {course.description}
                     </CardDescription>
                     <div className="flex items-center justify-center gap-4 mt-4">
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-2 text-sm text-gray-600">
                         <Clock className="w-4 h-4" />
                         {course.duration}
                       </div>
-                      <div className="flex items-center gap-2 text-sm font-bold text-foreground">
+                      <div className="flex items-center gap-2 text-sm font-bold text-black">
                         <DollarSign className="w-4 h-4" />
                         {course.price}
                       </div>
@@ -128,17 +128,17 @@ const Courses = () => {
                   <CardContent>
                     <div className="space-y-4">
                       {course.classes.map((cls) => (
-                        <div key={cls.number} className="border-l-4 border-primary pl-4">
-                          <h4 className="font-semibold text-card-foreground mb-1">
+                        <div key={cls.number} className="border-l-4 border-black pl-4">
+                          <h4 className="font-semibold text-black mb-1">
                             Class {cls.number}: {cls.title}
                           </h4>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
+                          <p className="text-sm text-gray-600 leading-relaxed">
                             {cls.content}
                           </p>
                         </div>
                       ))}
                     </div>
-                    <Button className="w-full mt-8" size="lg">
+                    <Button className="w-full mt-8 bg-black text-white hover:bg-gray-800" size="lg">
                       <a href="https://forms.gle/HaU79P3qhA4pCdhr5" target="_blank" rel="noopener noreferrer">
                         Register for This Course
                       </a>
